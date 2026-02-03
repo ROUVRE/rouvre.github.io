@@ -11,7 +11,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
+        className="bg-gray-800 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -34,7 +34,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
         </button>
 
         <div className="p-6 sm:p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-red-500 font-point-panther mb-4">
             {project.title}
           </h2>
 
@@ -51,7 +51,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="inline-block px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 rounded-full"
+                  className="font-harmonia inline-block px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 rounded-full"
                 >
                   {tag}
                 </span>
@@ -60,10 +60,10 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
           )}
 
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <h3 className="text-lg font-semibold text-red-500 mb-3 font-point-panther">
               About this project
             </h3>
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+            <p className="font-harmonia text-neutral-50 leading-relaxed whitespace-pre-line">
               {project.detailedDescription || project.description}
             </p>
           </div>
@@ -74,7 +74,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                className="font-harmonia inline-flex items-center gap-2 px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors font-medium"
               >
                 <svg
                   className="w-5 h-5"
@@ -98,7 +98,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium"
+                className="font-harmonia inline-flex items-center gap-2 px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium"
               >
                 <svg
                   className="w-5 h-5"

@@ -5,15 +5,15 @@ const Header = () => {
     <header className="mb-12 sm:mb-16">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
         <div className="flex-1">
-          <div className="text-sm text-gray-500 mb-8 sm:mb-10 font-normal">
+          <div className="text-sm text-gray-400 mb-8 sm:mb-10 font-normal font-harmonia">
             rouvre.github.io
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-5 leading-tight text-gray-900">
+          <h1 className="font-point-panther text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-5 leading-tight text-red-500">
             Hi, I'm Reyno Alfarez
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-5 leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-lg font-harmonia text-neutral-50 mb-4 sm:mb-5 leading-relaxed max-w-2xl">
             I'm a web developer based in Indonesia, currently on my 4th year as
             a college student majoring in Informatics. I specialize in
             full-stack web development using React, Vue, and Laravel, and I love
@@ -27,7 +27,7 @@ const Header = () => {
               href="https://linkedin.com/in/reynoalfarez"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline transition-colors duration-200"
+              className="text-red-500 hover:underline transition-colors duration-200 font-bold font-harmonia"
             >
               LinkedIn
             </a>
@@ -36,7 +36,7 @@ const Header = () => {
               href="https://github.com/ROUVRE"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline transition-colors duration-200"
+              className="text-red-500 hover:underline transition-colors duration-200 font-bold font-harmonia"
             >
               GitHub
             </a>
@@ -45,7 +45,7 @@ const Header = () => {
               href="https://twitter.com/ROUVRE04"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline transition-colors duration-200"
+              className="text-red-500 hover:underline transition-colors duration-200 font-bold font-harmonia"
             >
               Twitter
             </a>
