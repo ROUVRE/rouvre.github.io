@@ -51,7 +51,11 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="font-harmonia inline-block px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 rounded-full"
+                  className="font-harmonia inline-block pl-4 pr-4 px-3 py-1.5 mt-2 text-sm font-medium text-gray-700 bg-gray-100"
+                  style={{
+                    clipPath:
+                      "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%, 8px 50%)",
+                  }}
                 >
                   {tag}
                 </span>

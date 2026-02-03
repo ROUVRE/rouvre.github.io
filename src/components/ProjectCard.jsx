@@ -43,7 +43,7 @@ const ProjectCard = ({
     <>
       <div
         onClick={() => setIsModalOpen(true)}
-        className="block transition-transform duration-200 hover:-translate-y-1 cursor-pointer"
+        className="block transition-transform duration-200 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
       >
         <h2 className="text-lg font-semibold mb-2 text-red-500 font-point-panther">
           {projectData.title}
@@ -64,7 +64,11 @@ const ProjectCard = ({
             {visibleTags.map((tag, index) => (
               <span
                 key={index}
-                className="font-harmonia inline-block px-2.5 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors duration-200"
+                className="font-harmonia inline-block px-3 py-1 text-xs font-medium border text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors duration-200 relative pl-4 pr-4"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%, 8px 50%)",
+                }}
               >
                 {tag}
               </span>
@@ -76,7 +80,11 @@ const ProjectCard = ({
                   e.stopPropagation();
                   setShowAllTags(!showAllTags);
                 }}
-                className="inline-block px-2.5 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full hover:bg-blue-100 transition-colors duration-200"
+                className="inline-block px-3 py-1 text-xs font-medium text-neutral-50 bg-red-500 hover:bg-red-600 hover:cursor-pointer transition-colors duration-200 relative pl-4 pr-4"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%, 8px 50%)",
+                }}
               >
                 {showAllTags
                   ? "Show less"
