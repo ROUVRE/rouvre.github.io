@@ -49,6 +49,15 @@ const Header = () => {
             >
               Twitter
             </a>
+            <span className="text-gray-300 select-none">|</span>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=reynoalfarez04@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-500 hover:underline transition-colors duration-200 font-bold font-harmonia"
+            >
+              Contact Me!
+            </a>
           </div>
         </div>
 
